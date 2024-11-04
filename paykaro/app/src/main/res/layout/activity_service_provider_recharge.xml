@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_previous"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Title -->
+
+    <!-- Phone Number -->
+
+    <!-- Name Input Label -->
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="253dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Mobile Recharge"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Name Input -->
+
+    <!-- Service Provider Label -->
+
+    <!-- Service Provider Dropdown -->
+
+    <!-- Enter Amount Label -->
+
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="256dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="44dp"
+        android:text="+91 727754191"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="106dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberText" />
+
+    <TextView
+        android:id="@+id/nameInput"
+        android:layout_width="392dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        android:hint="Aman"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameLabel" />
+
+    <TextView
+        android:id="@+id/serviceProviderLabel"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="Service Provider"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameInput" />
+
+    <Spinner
+        android:id="@+id/serviceProviderSpinner"
+        android:layout_width="391dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceProviderLabel" />
+
+    <!-- Enter Amount Input -->
+
+    <!-- Recharge Button -->
+
+    <TextView
+        android:id="@+id/amountLabel"
+        android:layout_width="170dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="Enter Amount"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/serviceProviderSpinner" />
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="391dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel" />
+
+    <Button
+        android:id="@+id/rechargeButton"
+        android:layout_width="256dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FF4343"
+        android:text="Recharge"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

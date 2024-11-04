@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankDetails">
+
+    <!-- Header: Bank Details -->
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <!-- Account Holder's Name Field -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Account Holder's Name"
+        android:padding="12dp"
+        android:background="@drawable/rounded_input_background"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="textPersonName" />
+
+    <!-- Bank Name Dropdown using TextInputLayout and AutoCompleteTextView -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:id="@+id/bankname_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/select_bank_prompt"
+        android:backgroundTint="@android:color/transparent">
+
+        <AutoCompleteTextView
+            android:id="@+id/bankname_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:background="@drawable/rounded_input_background"
+            android:inputType="none"
+            app:simpleItems="@array/bank_names" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Account Number Field -->
+    <EditText
+        android:id="@+id/Anumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Account Number"
+        android:padding="12dp"
+        android:background="@drawable/rounded_input_background"
+        android:layout_below="@+id/bankname_input_layout"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="number" />
+
+    <!-- PAN Number Field -->
+    <EditText
+        android:id="@+id/panno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter PAN Number"
+        android:padding="12dp"
+        android:background="@drawable/rounded_input_background"
+        android:layout_below="@+id/Anumber"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="text" />
+
+    <!-- Aadhaar Number Field -->
+    <EditText
+        android:id="@+id/Adharno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Aadhaar Number"
+        android:padding="12dp"
+        android:background="@drawable/rounded_input_background"
+        android:layout_below="@+id/panno"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="number" />
+
+    <!-- Sign Up Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Adharno"
+        android:layout_margin="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="20dp"
+        android:text="Sign up"
+        android:textSize="25sp" />
+
+</RelativeLayout>
+

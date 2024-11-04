@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Back Button"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Old PIN input -->
+    <TextView
+        android:id="@+id/old_pin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your old PIN:"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/old_pin_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Old PIN Digit Boxes (6 digits) -->
+        <EditText
+            android:id="@+id/old_pin_digit_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/old_pin_digit_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/old_pin_digit_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/old_pin_digit_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/old_pin_digit_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/old_pin_digit_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- New PIN input -->
+    <TextView
+        android:id="@+id/new_pin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set new PIN:"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/new_pin_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- New PIN Digit Boxes (6 digits) -->
+        <EditText
+            android:id="@+id/new_pin_digit_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/new_pin_digit_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/new_pin_digit_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/new_pin_digit_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/new_pin_digit_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/new_pin_digit_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/btn_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

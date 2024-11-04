@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Back button or close icon -->
+
+    <!-- Profile Image -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+
+       <Button
+           android:id="@+id/back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:backgroundTint="#606060"
+           android:text="Back"
+           android:textColor="#ffffff"
+           android:textSize="18sp" />
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="89dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <!-- User Name and Banking Name -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paying Sunny Singh"
+        android:textColor="#000000"
+        android:textSize="20sp"
+    android:layout_marginTop="8dp"
+    android:gravity="center" />
+
+    <TextView
+        android:id="@+id/banking_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banking name: INDU DEVI"
+        android:textColor="#289D2D"
+        android:textSize="18sp"
+    android:gravity="center" />
+
+    <!-- Phone Number -->
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 73708 12165"
+        android:textColor="#000000"
+        android:textSize="18sp"
+    android:layout_marginTop="4dp"
+    android:gravity="center" />
+
+    <!-- Amount Input -->
+    <TextView
+        android:id="@+id/currency_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="₹"
+        android:textColor="#000000"
+        android:textSize="42sp"
+    />
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="105dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColorHint="#000000"
+        android:textSize="42sp"
+    />
+
+    <!-- Add Note Button -->
+    <EditText
+        android:id="@+id/add_note_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Add Notes"
+        android:padding="12dp"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+    android:textStyle="bold" />
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF5722"
+        android:text="Pay"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+    />
+
+</LinearLayout>

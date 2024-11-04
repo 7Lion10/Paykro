@@ -1,0 +1,43 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">PayKaro</string>
+
+    <!-- Bank Names Array -->
+    <string-array name="bank_names">
+        <item>Select Bank</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>State Bank of India</item>
+        <item>Axis Bank</item>
+        <item>Kotak Mahindra Bank</item>
+        <item>Yes Bank</item>
+        <item>IndusInd Bank</item>
+        <item>Punjab National Bank</item>
+        <item>Canara Bank</item>
+        <item>Union Bank of India</item>
+    </string-array>
+
+    <string name="bank_name">Bank Name</string>
+    <string name="acc_no">Account Number</string>
+    <string name="Iffc">IFSC Code</string>
+    <string name="Continue">Continue</string>
+    <string name="Enter_Phone_Number">Enter a Phone Number</string>
+    <string name="UPI">Pay any UPI >> app using Phone Number</string>
+    <string name="Contacts">All Contacts</string>
+    <string name="Money">Transfer Money</string>
+    <string name="IFSC">IFSC</string>
+    <string name="Bank">Bank Names</string>
+    <string name="Acc">Account Number</string>
+
+    <!-- Prompt String for Spinner -->
+    <string name="select_bank_prompt">Select Bank</string>
+
+    <string-array name="service_providers">
+        <item>Airtel</item>
+        <item>Jio</item>
+        <item>Vodafone</item>
+        <item>BSNL</item>
+        <item>MTNL</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PayKaro"
+        tools:targetApi="31">
+        <activity
+            android:name=".recharge_by_contact"
+            android:exported="false" />
+        <activity
+            android:name=".confirm_recharge"
+            android:exported="false" />
+        <activity
+            android:name=".recharge_pin"
+            android:exported="false" />
+        <activity
+            android:name=".MobileRecharge"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceProviderRecharge"
+            android:exported="false" />
+        <activity
+            android:name=".RechargeContact"
+            android:exported="false" />
+        <activity
+            android:name=".bal_disp"
+            android:exported="false" />
+        <activity
+            android:name=".balance_pin"
+            android:exported="false" />
+        <activity
+            android:name=".confirm_bank_trans"
+            android:exported="false" />
+        <activity
+            android:name=".bank_payment"
+            android:exported="false" />
+        <activity
+            android:name=".confirmPayment"
+            android:exported="false" />
+        <activity
+            android:name=".enterPin"
+            android:exported="false" />
+        <activity
+            android:name=".enterAmount"
+            android:exported="false" />
+        <activity
+            android:name=".BankDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".User_Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MobileTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".ShowContacts"
+            android:exported="false" />
+        <activity
+            android:name=".BankTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

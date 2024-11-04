@@ -1,0 +1,23 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">PayKaro</string>
+
+    <!-- Bank Names Array -->
+    <string-array name="bank_names">
+        <item>Select Bank</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>State Bank of India</item>
+        <item>Axis Bank</item>
+        <item>Kotak Mahindra Bank</item>
+        <item>Yes Bank</item>
+        <item>IndusInd Bank</item>
+        <item>Punjab National Bank</item>
+        <item>Canara Bank</item>
+        <item>Union Bank of India</item>
+    </string-array>
+
+    <!-- Prompt String for Spinner -->
+    <string name="select_bank_prompt">Select Bank</string>
+</resources>
+

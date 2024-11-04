@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292784179409",
+    "project_id": "authentication-7581d",
+    "storage_bucket": "authentication-7581d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292784179409:android:e72714809666e8ad849df0",
+        "android_client_info": {
+          "package_name": "com.example.paykaro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBqNq1QZ_7la8Mwwkn8rOFMxLX4PJGn-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
